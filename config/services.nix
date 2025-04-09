@@ -1,11 +1,8 @@
 {
   services = {
     upower.enable = true;
-
     printing.enable = true;
-
     openssh.enable = true;
-
     tlp = {
       enable = true;
       settings = {

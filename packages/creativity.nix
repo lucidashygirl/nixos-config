@@ -18,5 +18,4 @@
     muse
     obs-studio
   ];
-
 }
