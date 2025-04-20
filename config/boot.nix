@@ -1,6 +1,6 @@
 {
   boot.loader = rec {
     systemd-boot.enable = true;
-    canTouchEfiVariables = true;
+    efi.canTouchEfiVariables = true;
   };
 }
