@@ -1,6 +1,6 @@
 { inputs, ... }: {
   imports = [
-    inputs.nixvim.nixosModules.nixos
+    inputs.nixvim.nixosModules.nixvim
     ./config/default.nix
     ./config/bufferline.nix
   ];
