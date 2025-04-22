@@ -1,8 +1,12 @@
 {
-  inputs = { nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; };
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+  };
 
-  outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       system = "x86_64-linux";
       modules = [
         ./config/config.nix

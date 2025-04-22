@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -8,8 +8,7 @@
     blockbench
     eureka-editor
     gimp
-    godot_4
-    inkscape
+    inputs.nixos-unstable.godot
     kdePackages.kdenlive
     krita
     ldtk
