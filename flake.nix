@@ -1,8 +1,10 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    nixvim.url = "github:nix-community/nixvim";
-    nixvim.follows = "nixpkgs";
+    nixvim = {
+      url = "github:nix-community/nixvim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
