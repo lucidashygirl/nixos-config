@@ -1,6 +1,7 @@
 {
   programs.nixvim = {
     enable = true;
+    defaultEditor = true;
     # Import all your configuration modules here
     colorschemes.catppuccin = {
       enable = true;
