@@ -1,6 +1,6 @@
 {
   programs.nixvim = {
-    enabled = true;
+    enable = true;
     # Import all your configuration modules here
     colorschemes.catppuccin = {
       enable = true;
