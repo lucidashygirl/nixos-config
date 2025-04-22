@@ -8,7 +8,7 @@
     blockbench
     eureka-editor
     gimp
-    inputs.nixpkgs-unstable.godot
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.godot
     kdePackages.kdenlive
     krita
     ldtk
