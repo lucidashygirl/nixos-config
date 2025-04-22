@@ -1,7 +1,7 @@
-{ inputs, ... }: {
-  inputs.nixvim = {
+{
+  programs.nixvim = {
+    enabled = true;
     # Import all your configuration modules here
-    imports = [ ./bufferline.nix ];
     colorschemes.catppuccin = {
       enable = true;
       settings.flavour = "macchiato";
@@ -28,6 +28,7 @@
         settings.sources =
           [ { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; } ];
       };
+      bufferline.enable = true;
       cmp-buffer.enable = true;
       cmp-nvim-lsp.enable = true;
       cmp-nvim-lsp-document-symbol.enable = true;

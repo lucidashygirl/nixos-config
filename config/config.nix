@@ -5,6 +5,7 @@
     ./environment.nix
     ./networking.nix
     ./nix.nix
+    ./nixvim.nix
     ./programs.nix
     ./security.nix
     ./services.nix

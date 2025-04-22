@@ -16,7 +16,6 @@
         ./config/config.nix
         ./packages/packages.nix
         ./hardware-configuration.nix
-        ./nixvim/nixvim.nix
       ];
     };
   };
