@@ -38,25 +38,26 @@
       godot.enable = true;
       bacon.enable = true;
       treesitter.enable = true;
-      rust-tools.enable = true;
+      #rust-tools.enable = true;
+      rustaceanvim.enable = true;
       neo-tree.enable = true;
       none-ls = {
         enable = true;
         enableLspFormat = true;
       };
-
+      web-devicons.enable = true;
       lsp = {
         enable = true;
         servers = {
-          rust-analyzer = {
+          rust_analyzer = {
             enable = true;
             autostart = true;
-            installCargo = true;
-            installRustc = true;
+            # installCargo = true;
+            # installRustc = true;
           };
           nixd.enable = true;
-          typos-lsp.enable = true;
-          ast-grep.enable = true;
+          typos_lsp.enable = true;
+          ast_grep.enable = true;
         };
       };
     };
