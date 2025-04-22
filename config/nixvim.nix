@@ -49,12 +49,6 @@
       lsp = {
         enable = true;
         servers = {
-          rust_analyzer = {
-            enable = true;
-            autostart = true;
-            # installCargo = true;
-            # installRustc = true;
-          };
           nixd.enable = true;
           typos_lsp.enable = true;
           ast_grep.enable = true;
