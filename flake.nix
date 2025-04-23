@@ -16,20 +16,21 @@
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       system = "x86_64-linux";
-      modules = [ 
-      	./config 
-	./packages 
-	./hardware-configuration.nix  
-	home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.luci = ./home/home.nix;
+      modules = [
+        ./config
+        ./packages
+        ./hardware-configuration.nix
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.luci = ./home/home.nix;
+          home-manager.extraSpecialArgs = { inherit inputs; };
 
-            # Optionally, use home-manager.extraSpecialArgs to pass
-            # arguments to home.nix
-          } 
-	];
+          # Optionally, use home-manager.extraSpecialArgs to pass
+          # arguments to home.nix
+        }
+      ];
     };
   };
 }
