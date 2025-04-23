@@ -1,6 +1,6 @@
 {
   imports = [
     ./nixvim
-    ./alacritty
+    ./alacritty.nix
   ];
 }
