@@ -17,7 +17,7 @@
     protontricks
     r2modman
     ringracers
-    rpcs3
+    #rpcs3
     vkd3d
     vkd3d-proton
   ];
