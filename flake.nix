@@ -4,11 +4,11 @@
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixvim = {
       url = "github:nix-community/nixvim";
-      inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
-      inputs.nixpkgs-unstable.follows = "nixpkgs-unstable";
+      inputs.nixpkgs.follows = "nixpkgs-unstable";
     };
     # nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
