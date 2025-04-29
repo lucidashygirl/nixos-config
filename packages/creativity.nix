@@ -1,12 +1,13 @@
 { pkgs, ... }: {
   environment.systemPackages = with pkgs; [
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system} [
+      blender
+      blender-hip
+    ]
     audacity
-    blender
-    blender-hip
     blockbench
     eureka-editor
     gimp
-    # inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.godot
     kdePackages.kdenlive
     krita
     ldtk
