@@ -1,9 +1,7 @@
-{ pkgs, ... }: {
+{ pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system} [
-      blender
-      blender-hip
-    ]
+    blender
+    blender-hip
     audacity
     blockbench
     eureka-editor

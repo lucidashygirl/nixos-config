@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -6,7 +6,7 @@
     kdePackages.ark
     kdePackages.kdeconnect-kde
     vlc
-    wineWowPackages.waylandFull
     xfce.thunar
+    inputs.nixpkgs-unstable.legacyPackages.${pkgs.system}.wineWowPackages.waylandFull
   ];
 }
