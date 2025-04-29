@@ -10,6 +10,7 @@
     ./security.nix
     ./services.nix
     ./system.nix
+    ./systemd.nix
     ./time.nix
     ./users.nix
   ];
