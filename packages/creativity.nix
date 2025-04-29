@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
-    blender
+    #blender
     blender-hip
     audacity
     blockbench
