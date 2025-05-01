@@ -56,17 +56,8 @@
           ast_grep.enable = true;
         };
       };
+      orgmode.enable = true;
     };
-
-    extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
-      name = "orgmode";
-      src = pkgs.fetchFromGitHub {
-        owner = "nvim-orgmode";
-        repo = "orgmode";
-        rev = "15d66ead1285d99f8a21c4ef4874ac62e9320fe6";
-        hash = "sha256-/mmGWg43Mr9TdroAk1oFNzudzY4K7Rp0Li3uILExBxY=";
-      };
-    })];
 
     keymaps = [
       {
