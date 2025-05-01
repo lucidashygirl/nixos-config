@@ -58,7 +58,12 @@
           ast_grep.enable = true;
         };
       };
-      orgmode.enable = true;
+      orgmode = {
+        enable = true;
+        luaConfig = {
+          org_agenda_files = "~/orgfiles/*"
+        };
+      };
     };
 
     keymaps = [
