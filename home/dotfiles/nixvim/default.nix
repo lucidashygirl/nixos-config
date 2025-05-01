@@ -1,4 +1,3 @@
-{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -60,20 +59,20 @@
       };
       orgmode = {
         enable = true;
-        luaConfig = {
+        luaConfig = '' 
           org_agenda_files = "~/orgfiles/*";
-        };
+        '';
       };
     };
 
     keymaps = [
       {
         action = "<cmd>Neotree<CR>";
-        key = "<Space>e";
+        key = "<leader>e";
       }
       {
         action = "<cmd>bd<CR>";
-        key = "<Space>c";
+        key = "<leader>c";
       }
       {
         action = "<cmd>bn<CR>";
