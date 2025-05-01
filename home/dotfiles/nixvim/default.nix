@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -56,6 +57,16 @@
         };
       };
     };
+
+    extraPlugins = [(pkgs.vimUtils.buildVimPlugin {
+      name = "orgmode";
+      src = pkgs.fetchFromGitHub {
+        owner = "nvim-orgmode";
+        repo = "orgmode";
+        #rev = "<commit hash>";
+        #hash = "<nix NAR hash>";
+      };
+    })];
 
     keymaps = [
       {
