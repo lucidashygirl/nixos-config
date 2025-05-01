@@ -3,6 +3,8 @@
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
+    globals.mapleader = " ";
+    globals.maplocalleader = " ";
     # Import all your configuration modules here
     colorschemes.catppuccin = {
       enable = true;
