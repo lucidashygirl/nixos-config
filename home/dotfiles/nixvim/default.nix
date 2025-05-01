@@ -61,7 +61,7 @@
         enable = true;
         settings = { 
           org_agenda_files = "~/org/*";
-          org_default_notes_file = "~/org/default_noted.org";
+          org_default_notes_file = "~/org/default_notes.org";
         };
       };
     };
