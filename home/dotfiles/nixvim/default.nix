@@ -59,9 +59,9 @@
       };
       orgmode = {
         enable = true;
-        luaConfig = '' 
+        settings = { 
           org_agenda_files = "~/orgfiles/*";
-        '';
+        };
       };
     };
 
