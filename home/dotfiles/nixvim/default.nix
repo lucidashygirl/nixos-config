@@ -63,7 +63,7 @@
       src = pkgs.fetchFromGitHub {
         owner = "nvim-orgmode";
         repo = "orgmode";
-        #rev = "<commit hash>";
+        rev = "15d66ead1285d99f8a21c4ef4874ac62e9320fe6";
         #hash = "<nix NAR hash>";
       };
     })];
