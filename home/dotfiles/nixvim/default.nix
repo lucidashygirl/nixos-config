@@ -37,6 +37,7 @@
       cmp-nvim-lsp-document-symbol.enable = true;
       cmp-nvim-lsp-signature-help.enable = true;
       cmp-clippy.enable = true;
+      cmp-latex-symblols.enable = true;
       lsp-format.enable = true;
       godot.enable = true;
       bacon.enable = true;
