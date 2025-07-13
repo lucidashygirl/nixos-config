@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     alacritty
+    alsa-utils
     appimage-run
     btop
     ffmpeg
@@ -15,6 +16,7 @@
     nvtopPackages.amd
     p7zip
     pamixer
+    scanmem
     tlrc
     unzip
     wget

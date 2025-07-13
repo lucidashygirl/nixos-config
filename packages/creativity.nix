@@ -13,5 +13,6 @@
     lmms
     muse
     obs-studio
+    tiled
   ];
 }

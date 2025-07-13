@@ -6,6 +6,7 @@
     dolphin-emu
     dsda-doom
     dsda-launcher
+    duckstation-bin
     everest-mons
     gamemode
     gamescope
@@ -14,6 +15,7 @@
     mangohud
     minetest
     owmods-cli
+    prismlauncher
     protontricks
     r2modman
     ringracers
