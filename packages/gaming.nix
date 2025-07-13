@@ -6,7 +6,7 @@
     dolphin-emu
     dsda-doom
     dsda-launcher
-    duckstation-bin
+    duckstation
     everest-mons
     gamemode
     gamescope
