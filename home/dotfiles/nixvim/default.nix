@@ -1,3 +1,4 @@
+{pkgs, ...}:
 {
   programs.nixvim = {
     enable = true;
@@ -28,8 +29,19 @@
         enable = true;
         #settings.completion.autocomplete = [ "TextChanged" ];
         autoEnableSources = true;
-        settings.sources =
-          [ { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; } ];
+        settings = {
+          sources =
+            [ { name = "nvim_lsp"; } { name = "path"; } { name = "buffer"; } ];
+          mapping = {
+            "<C-Space>" = "cmp.mapping.complete()";
+            "<C-d>" = "cmp.mapping.scroll_docs(-4)";
+            "<C-e>" = "cmp.mapping.close()";
+            "<C-f>" = "cmp.mapping.scroll_docs(4)";
+            "<CR>" = "cmp.mapping.confirm({ select = true })";
+            "<S-Tab>" = "cmp.mapping(cmp.mapping.select_prev_item(), {'i', 's'})";
+            "<Tab>" = "cmp.mapping(cmp.mapping.select_next_item(), {'i', 's'})";
+          };
+        };
       };
       bufferline.enable = true;
       cmp-buffer.enable = true;
@@ -56,13 +68,6 @@
           nixd.enable = true;
           typos_lsp.enable = true;
           ast_grep.enable = true;
-        };
-      };
-      orgmode = {
-        enable = true;
-        settings = { 
-          org_agenda_files = "~/org/*";
-          org_default_notes_file = "~/org/default_notes.org";
         };
       };
     };

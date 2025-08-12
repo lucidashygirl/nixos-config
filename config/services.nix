@@ -1,5 +1,10 @@
 {
   services = {
+    xserver.xkb = {
+      layout = "de";
+      variant = "us";
+      options = "grp:rctrl_ralt_toggle";
+    };
     flatpak.enable = true;
     upower.enable = true;
     printing.enable = true;
