@@ -70,7 +70,24 @@
           ast_grep.enable = true;
         };
       };
+      orgmode = {
+        enable = true;
+        settings = { 
+          org_agenda_files = "~/org/*";
+          org_default_notes_file = "~/org/default_notes.org";
+        };
+      };
     };
+
+    extraPlugins = [
+      pkgs.vimPlugins."org-roam-nvim"
+      pkgs.vimPlugins.ron-vim
+    ];
+
+    extraConfigLua = "
+    require('org-roam').setup({
+      directory = '~/org/roam/',
+    })";
 
     keymaps = [
       {
