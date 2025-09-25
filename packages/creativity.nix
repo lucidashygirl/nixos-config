@@ -6,6 +6,7 @@
     blockbench
     eureka-editor
     gimp
+    godot
     kdePackages.kdenlive
     krita
     ldtk
@@ -14,5 +15,6 @@
     muse
     obs-studio
     tiled
+    trenchbroom
   ];
 }

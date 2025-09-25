@@ -7,7 +7,7 @@
     pavucontrol
     qt6Packages.qt6ct
     rofi-power-menu
-    rofi-wayland
+    rofi
     slurp
     wayland
     wl-clipboard
