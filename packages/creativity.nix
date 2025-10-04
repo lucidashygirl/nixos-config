@@ -15,6 +15,5 @@
     muse
     obs-studio
     tiled
-    trenchbroom
   ];
 }
