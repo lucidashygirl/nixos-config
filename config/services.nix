@@ -5,6 +5,12 @@
       variant = "us";
       options = "grp:rctrl_ralt_toggle";
     };
+    pipewire = {
+      enable = true;
+      alsa.enable = true;
+      alsa.support32Bit = true;
+      pulse.enable = true;
+    };
     flatpak.enable = true;
     upower.enable = true;
     printing.enable = true;
