@@ -1,6 +1,5 @@
 {
   imports = [
-    ./audio.nix
     ./boot.nix
     ./environment.nix
     ./hardware.nix
@@ -13,5 +12,6 @@
     ./systemd.nix
     ./time.nix
     ./users.nix
+    ./virtualization.nix
   ];
 }

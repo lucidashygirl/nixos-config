@@ -3,6 +3,6 @@
     isNormalUser = true;
     description = "Luci";
     home = "/home/luci";
-    extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "docker" ];
   };
 }
