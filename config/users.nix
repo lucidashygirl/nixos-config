@@ -3,6 +3,6 @@
     isNormalUser = true;
     description = "Luci";
     home = "/home/luci";
-    extraGroups = [ "wheel" "docker" ];
+    extraGroups = [ "wheel" "docker" "audio" ];
   };
 }

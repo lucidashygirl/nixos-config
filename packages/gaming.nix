@@ -10,9 +10,10 @@
     gamemode
     gamescope
     lumafly
-    lutris
+    #lutris
     mangohud
-    minetest
+    mgba
+    luanti
     owmods-cli
     prismlauncher
     protontricks
@@ -21,5 +22,6 @@
     #rpcs3
     vkd3d
     vkd3d-proton
+    zsnes
   ];
 }

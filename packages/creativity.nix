@@ -11,7 +11,7 @@
     krita
     ldtk
     libreoffice-qt
-    lmms
+    #lmms
     muse
     obs-studio
     tiled
