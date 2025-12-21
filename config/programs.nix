@@ -1,5 +1,9 @@
 { pkgs, ... }: {
   programs = {
+    appimage = {
+      enable = true;
+      binfmt = true;
+    };
     nix-ld.enable = true;
     sway.enable = true;
     steam.enable = true;

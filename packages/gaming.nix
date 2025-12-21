@@ -2,6 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
+    archipelago
     blastem
     dolphin-emu
     dsda-doom
@@ -19,9 +20,13 @@
     protontricks
     r2modman
     ringracers
-    #rpcs3
+    rpcs3
     vkd3d
     vkd3d-proton
     zsnes
   ];
+
+  nixpkgs.config.packageOverrides = pkgs: {
+    rpcs3 = pkgs.callPackage ./overrides/rpcs3/default.nix { };
+  };
 }
