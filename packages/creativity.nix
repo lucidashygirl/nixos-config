@@ -1,7 +1,7 @@
 { pkgs, inputs, ... }: {
   environment.systemPackages = with pkgs; [
     #blender
-    blender-hip
+    pkgsRocm.blender
     audacity
     blockbench
     eureka-editor
@@ -12,7 +12,7 @@
     ldtk
     libreoffice-qt
     #lmms
-    muse
+    #muse
     obs-studio
     tiled
   ];

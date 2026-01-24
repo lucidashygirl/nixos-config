@@ -6,6 +6,7 @@
     alsa-utils
     appimage-run
     btop
+    bluetui
     ffmpeg
     fish
     git

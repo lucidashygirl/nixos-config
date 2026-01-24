@@ -11,7 +11,12 @@
     signal-desktop-bin
     slurp
     wayland
+    warp
+    warpinator
     wl-clipboard
     xwayland
+
+    qt6ct
+    catppuccin-qt5ct
   ];
 }

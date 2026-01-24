@@ -11,19 +11,27 @@
     gamemode
     gamescope
     lumafly
-    #lutris
+    lutris
     mangohud
     mgba
+    moonlight-qt
     luanti
     owmods-cli
     prismlauncher
     protontricks
     r2modman
     ringracers
+    (retroarch.withCores (cores: with cores; [
+      beetle-psx-hw
+      flycast
+    ]))
     rpcs3
+    ryubing
+    sunshine
+    sm64coopdx
     vkd3d
     vkd3d-proton
-    zsnes
+    #zsnes
   ];
 
   nixpkgs.config.packageOverrides = pkgs: {

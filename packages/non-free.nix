@@ -3,6 +3,11 @@
 {
   nixpkgs.config = {
     allowUnfreePredicate = pkg:
-    builtins.elem (lib.getName pkg) [ "steam" "steam-unwrapped" ];
+    builtins.elem (lib.getName pkg) [ 
+      "steam" 
+      "steam-unwrapped" 
+      "parsec-bin"
+      "sm64coopdx"
+    ];
   };
 }
