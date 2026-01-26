@@ -1,11 +1,26 @@
 { pkgs, ... }: 
 {
-  nixpkgs.config.qt6 {
-    enable = true;
-    platformTheme = "qt5ct"; 
-    style = {
-      package = pkgs.utterly-nord-plasma;
-      name = "Utterly Nord Plasma";
+  nixpkgs.config = {
+    qt6 = {
+      enable = true;
+      platformTheme = "qt6ct"; 
+      style = {
+        package = pkgs.catppuccin-qt5ct {
+          flavor = "macchiato";
+          accent = "pink";
+        };
+        name = "Catppuccin Macchiato";
+      };
+    };
+    gtk = {
+      enable = true;
+      theme = {
+        package = pkgs.catppuccin-gtk {
+          flavor = "macchiato";
+          accent = "pink";
+        };
+        name = "Catppuccin Macchiato";
+      };
     };
   };
 }

@@ -16,7 +16,7 @@
     wl-clipboard
     xwayland
 
-    qt6ct
+    qt6Packages.qt6ct
     catppuccin-qt5ct
   ];
 }

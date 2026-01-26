@@ -28,7 +28,7 @@
     rpcs3
     ryubing
     sunshine
-    sm64coopdx
+    #sm64coopdx
     vkd3d
     vkd3d-proton
     #zsnes
