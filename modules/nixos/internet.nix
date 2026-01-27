@@ -1,5 +1,4 @@
 { pkgs, lib, config, ... }:
-
 {
   options = {
     internet.enable = lib.mkEnableOption "enable web browser";
