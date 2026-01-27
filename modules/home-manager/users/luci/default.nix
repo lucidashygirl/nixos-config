@@ -3,9 +3,9 @@
     ./dotfiles
   ];
 
-  home = {
-    username = "Luci";
-    homeDirectory = "/home/luci";
+  users.users.luci = {
+    name = "Luci";
+    home = "/home/luci";
     extraGroups = [ "wheel" "docker" "audio" ];
   };
 

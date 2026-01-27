@@ -22,7 +22,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.luci = ./home/home.nix;
+          home-manager.users.luci = ./home-manager/default.nix;
           home-manager.extraSpecialArgs = { inherit inputs; };
 
           # Optionally, use home-manager.extraSpecialArgs to pass
