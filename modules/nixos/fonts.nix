@@ -1,10 +1,10 @@
 { pkgs, lib, config, ... }: 
 {
   options = {
-    fonts.enable = lib.mkEnableOption "enable fonts";
+    extra-fonts.enable = lib.mkEnableOption "enable fonts";
   };
 
-  config = lib.mkIf config.fonts.enable {
+  config = lib.mkIf config.extra-fonts.enable {
     fonts.packages = with pkgs; [ font-awesome maple-mono.NF open-dyslexic ];
   };
 }

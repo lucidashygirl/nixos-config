@@ -5,8 +5,6 @@
     catppuccin.enable = lib.mkEnableOption "enables catppuccin theme";
   };
 
-  
-
   config = lib.mkIf config.catppuccin.enable {
     environment.systemPackages = with pkgs; [
       qt6Packages.qt6ct

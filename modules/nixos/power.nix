@@ -1,9 +1,9 @@
 { lib, config, ... }: 
 {
   options = {
-    power.enable = lib.mkEnableOption "enable power profile";
+    power-profile.enable = lib.mkEnableOption "enable power profile";
   };
-  config = lib.mkIf config.power.enable {
+  config = lib.mkIf config.power-profile.enable {
     services = {
       upower.enable = true;
       tlp = {
