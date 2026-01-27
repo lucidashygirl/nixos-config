@@ -5,12 +5,7 @@
     catppuccin.enable = lib.mkEnableOption "enables catppuccin theme";
   };
 
-  environment = {
-    sessionVariables = {
-      GTK_USE_PORTAL = "0";
-      QT_QPA_PLATFORMTHEME = "qt6ct";
-    };
-  };
+  
 
   config = lib.mkIf config.catppuccin.enable {
     environment.systemPackages = with pkgs; [
@@ -40,6 +35,10 @@
           name = "Catppuccin Macchiato";
         };
       };
+    };
+    environment.sessionVariables = {
+      GTK_USE_PORTAL = "0";
+      QT_QPA_PLATFORMTHEME = "qt6ct";
     };
   };
 }

@@ -1,7 +1,12 @@
-{ pkgs, inputs, ... }:
-
+{ pkgs, lib, config, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    wineWowPackages.waylandFull
-  ];
+  options = {
+    wine.enable = lib.mkEnableOption "enables wine";
+  };
+
+  config = lib.mkIf config.wine.enable {
+    environment.systemPackages = with pkgs; [
+      wineWowPackages.waylandFull
+    ];
+  };
 }

@@ -3,7 +3,7 @@
   options = {
     modeling.enable = lib.mkEnableOption "enable modeling";
   };
-  config = lib.mkIf config.gamedev.enable {
+  config = lib.mkIf config.modeling.enable {
     environment.systemPackages = with pkgs; [
       pkgsRocm.blender
       blockbench

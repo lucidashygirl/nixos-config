@@ -1,6 +1,6 @@
 { pkgs, lib, config, ... }: {
   options = {
-    programs.enable = lib.mkEnableOption "enables appimage and nix-ld";
+    programs.enable = lib.mkEnableOption "enables support for running other packages";
   };
 
   config = lib.mkIf config.programs.enable {
