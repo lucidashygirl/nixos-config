@@ -7,7 +7,8 @@
     ./catppuccin.nix
     ./chat.nix
     ./cli.nix
-    ./default.nix
+    ./desktop.nix
+    ./docker.nix
     ./drawing.nix
     ./editing.nix
     ./file-management.nix
@@ -21,7 +22,6 @@
     ./power.nix
     ./programs.nix
     ./security.nix
-    ./virtualization.nix
     ./wine.nix
     ./writing.nix
   ];
