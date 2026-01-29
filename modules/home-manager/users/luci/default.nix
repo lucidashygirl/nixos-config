@@ -9,6 +9,4 @@
     home = "/home/luci";
     extraGroups = [ "wheel" "docker" "audio" ];
   };
-
-  time.timeZone = "America/New_York";
 }

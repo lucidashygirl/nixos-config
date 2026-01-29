@@ -17,7 +17,7 @@
     ./gaming.nix
     ./gnupg.nix
     ./internet.nix
-    ./keyboard-de-us.nix
+    ./keyboard
     ./modeling.nix
     ./music.nix
     ./networking.nix

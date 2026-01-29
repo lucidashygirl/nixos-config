@@ -1,0 +1,5 @@
+{
+  import = [
+    ./de-us.nix
+  ];
+}
