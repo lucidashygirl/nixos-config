@@ -4,7 +4,7 @@
   };
 
   config = lib.mkIf config.gaming.enable {
-    steam.enable = true;
+    programs.steam.enable = true;
 
     nixpkgs.config = {
       allowUnfreePredicate = pkg:

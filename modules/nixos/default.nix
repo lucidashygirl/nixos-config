@@ -15,6 +15,7 @@
     ./fonts.nix
     ./gamedev.nix
     ./gaming.nix
+    ./gnupg.nix
     ./internet.nix
     ./modeling.nix
     ./music.nix
@@ -40,6 +41,7 @@
   extra-fonts.enable = lib.mkDefault true;
   gamedev.enable = lib.mkDefault true;
   gaming.enable = lib.mkDefault true;
+  gnupg-agent.enable = lib.mkDefault true;
   internet.enable = lib.mkDefault true;
   modeling.enable = lib.mkDefault true;
   music.enable = lib.mkDefault true;

@@ -5,8 +5,8 @@
   };
 
   config = lib.mkIf config.desktop.enable {
-    sway.enable = true;
-    printing.enable = true;
+    programs.sway.enable = true;
+    services.printing.enable = true;
     environment.systemPackages = with pkgs; [
       dunst
       grim
