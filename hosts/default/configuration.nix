@@ -12,7 +12,7 @@
     gc.automatic = true;
   };
 
-  keyboard.america-ny.enable = true;
+  keyboard-de-us.enable = true;
   
   time.timeZone = "America/New_York";
   system.stateVersion = "24.11";
