@@ -22,7 +22,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.luci = ./modules/home/users/luci/home-manager;
+          home-manager.users.luci = ./modules/home/luci/home-manager;
           home-manager.extraSpecialArgs = { inherit inputs; };
 
           # Optionally, use home-manager.extraSpecialArgs to pass

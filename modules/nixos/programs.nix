@@ -11,11 +11,6 @@
         binfmt = true;
       };
       nix-ld.enable = true;
-      gnupg.agent = {
-        enable = true;
-        pinentryPackage = with pkgs; pinentry-qt;
-        enableSSHSupport = true;
-      };
     };
   };
 }

@@ -3,7 +3,7 @@
   imports = [
     inputs.nixvim.homeModules.nixvim
     ./nixvim
-    ./sway
+    #./sway
     ./alacritty.nix
     ./git.nix
   ];
