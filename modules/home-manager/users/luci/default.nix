@@ -4,7 +4,8 @@
   ];
 
   users.users.luci = {
-    name = "Luci";
+    isNormalUser = true;
+    description = "Luci";
     home = "/home/luci";
     extraGroups = [ "wheel" "docker" "audio" ];
   };
